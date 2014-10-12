@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+table {
+	margin-top: 1.5em;
+}
+
+td {
+	padding: .2em 1em;
+}
+
+#error_handle {
+	font-family: sans-serif;
+	padding: 20px;
+	background: rgba(222,22,22,.2);
+	border: red 13px double;
+}
+
