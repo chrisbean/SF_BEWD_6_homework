@@ -4,17 +4,27 @@
 
 <table>
   <tr>
+    <th>Rank</th>
     <th>Title</th>
+    <th>Vote!</th>
     <th>Text</th>
   </tr>
  
   <% @post.each do |post| %>
     <tr>
+      <!-- replace placeholder when it works -->
+      <td>#</td>
       <td><%= post.title %></td>
+      <td>
+        <!-- insert upvote form here -->
+        <!-- delete dummy buttons when I get it working -->
+        <%= submit_tag 'upvote', :name => 'up' %>
+        <%= submit_tag 'downvote', :name => 'down' %>
+      </td>
       <td><%= post.text %></td>
-      <td><%= link_to 'show this post', post_path(post) %></td>
-	    <td><%= link_to 'edit this post', edit_post_path(post) %></td>
-	    <td><%= link_to 'destroy post', post_path(post),
+      <td><%= link_to 'show', post_path(post) %></td>
+	    <td><%= link_to 'edit', edit_post_path(post) %></td>
+	    <td><%= link_to 'destroy', post_path(post),
 	                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
