@@ -29,3 +29,17 @@ td {
 	border: red 13px double;
 }
 
+.commentary
+{
+	font-size: .8em;
+	color: #333;
+	margin: 2em;
+	padding: .2em 1.2em;
+	background: #eee;
+}
+
+.commentary a {
+	text-decoration: none;
+	padding: 0 0 2.5em;
+	display: block;
+}
