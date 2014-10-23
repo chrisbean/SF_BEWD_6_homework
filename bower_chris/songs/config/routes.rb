@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   get 'musics/index'
-
   get 'musics/show'
-
   get 'musics/new'
-
   get 'musics/edit'
+
+  root 'musics#index'
+
+  resources :musics
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
