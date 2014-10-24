@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024033348) do
+ActiveRecord::Schema.define(version: 20141024200335) do
 
   create_table "songs", force: true do |t|
-    t.string   "song_name"
-    t.string   "artist_name"
-    t.string   "record_label"
+    t.string   "tune"
+    t.string   "singer"
+    t.string   "company"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
