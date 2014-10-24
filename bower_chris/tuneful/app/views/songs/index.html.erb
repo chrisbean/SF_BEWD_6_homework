@@ -2,6 +2,7 @@
  
 <table>
   <tr>
+    <th>id</th>
     <th>Song</th>
     <th>Artist</th>
     <th>Label</th>
@@ -9,9 +10,12 @@
  
   <% @songs.each do |song| %>
     <tr>
+    	<td><%= song.id %></td>
       <td><%= song.song_name %></td>
       <td><%= song.artist_name %></td>
       <td><%= song.record_label %></td>
     </tr>
   <% end %>
 </table>
+
+<%= link_to 'add a song', new_song_path %>
