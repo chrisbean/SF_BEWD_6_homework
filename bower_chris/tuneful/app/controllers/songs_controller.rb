@@ -13,18 +13,18 @@ def index
   end
 
   def create
-  	# @song = Song.new(song_params)
+  	@song = Song.new(song_params)
 
   	# @song.save
   	# redirect_to @song
 
-  	# if @song.save
-  	# 	redirect_to songs_path
-  	# else
-  	# 	render 'new'
-  	# end
+  	if @song.save
+  		redirect_to songs_path
+  	else
+  		render 'new'
+  	end
 
-  	render plain: params[:song].inspect
+  	# render plain: params[:song].inspect
   end
 
   def edit
@@ -52,7 +52,9 @@ def index
   end
 
   def song_params
-   	params.require(:tune).permit(:singer, :company)
+    params.require(:tune).permit!
+    # params.require(:tune).permit(:singer, :company)
+    # params.permit(:tune, :singer, :company, :song => [])
   	# params.permit(:song_name, :artist_name, :record_label)
   	# params.require(:song_name).permit(:artist_name, :record_label)
 	end
