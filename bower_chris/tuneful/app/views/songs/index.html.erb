@@ -1,0 +1,17 @@
+<h1>Tuneful</h1>
+ 
+<table>
+  <tr>
+    <th>Song</th>
+    <th>Artist</th>
+    <th>Label</th>
+  </tr>
+ 
+  <% @songs.each do |song| %>
+    <tr>
+      <td><%= song.song_name %></td>
+      <td><%= song.artist_name %></td>
+      <td><%= song.record_label %></td>
+    </tr>
+  <% end %>
+</table>
