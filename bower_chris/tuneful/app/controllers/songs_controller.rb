@@ -4,7 +4,7 @@ def index
   end
 
   def show
-  	@song = find_song
+  	@song = Song.find(params[:id])
   	# or @song = Songs.find(params[:id])
   end
 
@@ -14,22 +14,22 @@ def index
 
   def create
   	@song = Song.new(song_params)
+    # @song.tune = params[:tune]
 
   	if @song.save
   		redirect_to songs_path
   	else
   		render 'new'
   	end
-
   	# render plain: params[:song].inspect
   end
 
   def edit
-  	@song = find_song
+  	@song = Song.find(params[:id])
   end
 
   def update
-  	@song = find_song
+  	@song = Song.find(params[:id])
   	if song.update(song_params)
   		redirect_to songs_path
   	else
@@ -38,17 +38,16 @@ def index
   end
 
   def destroy
-  	@song = find_song
+  	@song = Song.find(params[:id])
   	@song.destroy
   	redirect_to songs_path
   end
 
   private
-  def find_song
-  	Song.find(params[:id])
-  end
 
   def song_params
+    params.require(:tune).permit(:singer, :company)
+
     ## error: param is missing or the value is empty: tune
     ## server: Completed 400 Bad Request
     # params.require(:tune).permit(:singer, :company, :song => [])

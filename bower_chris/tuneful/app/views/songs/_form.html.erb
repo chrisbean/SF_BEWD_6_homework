@@ -1,6 +1,20 @@
-<%= simple_form_for(@song, html: {:class => 'form-horizontal'}) do |f| %>
-	<%= f.input :tune, label: false, input_html: {:class => 'form-control', placeholder: "name of song"} %> 
-	<%= f.input :singer, label: false, input_html: {:class => 'form-control', placeholder: "singer"} %>
-	<%= f.input :company, label: false, input_html: {:class => 'form-control', placeholder: "record label"} %>
-	<%= f.submit "submit" %>
+<%= form_for :song, url: songs_path do |f| %>
+  <p>
+    <%= f.label :tune %><br>
+    <%= f.text_field :tune %>
+  </p>
+ 
+  <p>
+    <%= f.label :singer %><br>
+    <%= f.text_field :singer %>
+  </p>
+
+  <p>
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
 <% end %>
