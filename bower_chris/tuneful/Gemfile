@@ -8,7 +8,7 @@ gem 'sqlite3'
 # api
 gem "rapgenius", "~> 1.0.2"
 
-# front end
+# frontend
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'

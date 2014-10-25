@@ -15,9 +15,6 @@ def index
   def create
   	@song = Song.new(song_params)
 
-  	# @song.save
-  	# redirect_to @song
-
   	if @song.save
   		redirect_to songs_path
   	else
@@ -52,10 +49,20 @@ def index
   end
 
   def song_params
-    params.require(:tune).permit!
+    ## error: param is missing or the value is empty: tune
+    ## server: Completed 400 Bad Request
+    # params.require(:tune).permit(:singer, :company, :song => [])
+
+    ## error: param is missing or the value is empty: tune
+    ## server: Completed 400 Bad Request
+    # params.require(:tune).permit!
+    
+    ## error: param is missing or the value is empty: tune
+    ## server: Unpermitted parameters: utf8, authenticity_token, song, commit
     # params.require(:tune).permit(:singer, :company)
+    
+    ## just adds empty id to db
+    ## server: Completed 200 OK
     # params.permit(:tune, :singer, :company, :song => [])
-  	# params.permit(:song_name, :artist_name, :record_label)
-  	# params.require(:song_name).permit(:artist_name, :record_label)
-	end
+  end
 end
