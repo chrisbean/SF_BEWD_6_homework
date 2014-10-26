@@ -1,2 +1,2 @@
-module SingersHelper
+module ArtistsHelper
 end
