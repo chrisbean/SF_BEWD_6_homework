@@ -11,4 +11,6 @@
 #
 
 class Song < ActiveRecord::Base
+	validates :tune, presence: true,
+                    length: { minimum: 1 }
 end
