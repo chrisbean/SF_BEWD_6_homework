@@ -14,6 +14,10 @@
       <td><%= song.tune %></td>
       <td><%= song.singer %></td>
       <td><%= song.company %></td>
+      <td><%= link_to 'show', song_path(song) %> 
+          <%= link_to 'edit', edit_song_path(song) %>
+          <%= link_to 'destroy', song_path(song), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
     </tr>
   <% end %>
 </table>
