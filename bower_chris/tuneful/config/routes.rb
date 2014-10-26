@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  get 'singers/index'
 
-  get 'singers/show'
-
-  get 'singers/new'
-
-  get 'singers/edit'
-
+  resources :artists
   resources :songs #creates all paths
   root 'home#index'
 
