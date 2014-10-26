@@ -1,16 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/index'
-
-  resources :songs
-
-  get 'songs/index'
-
-  get 'songs/show'
-
-  get 'songs/new'
-
-  get 'songs/edit'
-
+  resources :songs #creates all paths
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

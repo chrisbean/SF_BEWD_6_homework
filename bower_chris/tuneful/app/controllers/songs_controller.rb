@@ -17,7 +17,7 @@ def index
     # @song.tune = params[:tune]
 
   	if @song.save
-  		redirect_to songs_path
+  		redirect_to @song
   	else
   		render 'new'
   	end
@@ -44,24 +44,8 @@ def index
   end
 
   private
-
+  #attributes that you want people to update must be permitted
   def song_params
-    params.require(:tune).permit(:singer, :company)
-
-    ## error: param is missing or the value is empty: tune
-    ## server: Completed 400 Bad Request
-    # params.require(:tune).permit(:singer, :company, :song => [])
-
-    ## error: param is missing or the value is empty: tune
-    ## server: Completed 400 Bad Request
-    # params.require(:tune).permit!
-    
-    ## error: param is missing or the value is empty: tune
-    ## server: Unpermitted parameters: utf8, authenticity_token, song, commit
-    # params.require(:tune).permit(:singer, :company)
-    
-    ## just adds empty id to db
-    ## server: Completed 200 OK
-    # params.permit(:tune, :singer, :company, :song => [])
+    params.require(:song).permit(:singer, :company, :tune)
   end
 end
