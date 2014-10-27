@@ -1,9 +1,10 @@
 <div class="col-xs-12">
+<div class="col-xs-10 col-xs-offset-1">
+  <div class="row">
 
-<div class="row">
-<h1>Tuneful singers</h1>
- 
-<table>
+  <h1>Tuneful singers</h1>
+  <div class="table-responsive">
+  <table class="table table-condensed">
   <tr>
     <th>id</th>
     <th>Artist</th>
@@ -17,9 +18,9 @@
       <td><%= artist.name %></td>
       <td><%= artist.sang %></td>
       <td><%= artist.info %></td>
-      <td><%= link_to 'show', artist_path(artist), :class => 'btn btn-success btn-sm' %> 
-          <%= link_to 'edit', edit_artist_path(artist), :class => 'btn btn-warning btn-sm' %>
-          <%= link_to 'destroy', artist_path(artist), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %>
+      <td><%= link_to 'show', artist_path(artist), :class => 'btn btn-show btn-sm' %> 
+          <%= link_to 'edit', edit_artist_path(artist), :class => 'btn btn-edit btn-sm' %>
+          <%= link_to 'destroy', artist_path(artist), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-destroy btn-sm' %>
       </td>
     </tr>
   <% end %>
@@ -27,4 +28,6 @@
 </div>
 </div>
 
-<%= link_to 'add new artist', new_artist_path, :class => 'btn btn-info btn-sm' %> 
+<%= link_to 'add new artist', new_artist_path, :class => 'btn btn-info btn-sm' %> <%= link_to 'view by song', songs_path, :class => 'btn btn-info btn-sm' %> 
+</div>
+</div>

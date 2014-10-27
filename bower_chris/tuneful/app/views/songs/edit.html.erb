@@ -1,4 +1,7 @@
-<h1>edit song</h1>
+<div class="col-xs-12">
+<div class="col-xs-10 col-xs-offset-1">
+  <div class="row">
+  <h1>edit song</h1>
  
   <% if @song.errors.any? %>
   <div id="error_explanation">
@@ -13,5 +16,8 @@
   <% end %>
 
 <%= render 'form' %>
- 
-<%= link_to 'go back', songs_path %>
+ <br />
+<%= link_to 'go back', songs_path, :class => 'btn btn-info btn-sm' %>
+</div>
+</div>
+</div>
