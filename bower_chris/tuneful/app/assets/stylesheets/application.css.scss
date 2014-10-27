@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require_bootstrap
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+td {
+	padding-right: 2em;
+}

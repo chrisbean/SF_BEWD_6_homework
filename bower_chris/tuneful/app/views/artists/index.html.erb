@@ -1,3 +1,6 @@
+<div class="col-xs-12">
+
+<div class="row">
 <h1>Tuneful singers</h1>
  
 <table>
@@ -14,12 +17,14 @@
       <td><%= artist.name %></td>
       <td><%= artist.sang %></td>
       <td><%= artist.info %></td>
-      <td><%= link_to 'show', artist_path(artist) %> 
-          <%= link_to 'edit', edit_artist_path(artist) %>
-          <%= link_to 'destroy', artist_path(artist), method: :delete, data: { confirm: 'Are you sure?' } %>
+      <td><%= link_to 'show', artist_path(artist), :class => 'btn btn-success btn-sm' %> 
+          <%= link_to 'edit', edit_artist_path(artist), :class => 'btn btn-warning btn-sm' %>
+          <%= link_to 'destroy', artist_path(artist), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-sm' %>
       </td>
     </tr>
   <% end %>
 </table>
+</div>
+</div>
 
-<%= link_to 'add an artist', new_artist_path %>
+<%= link_to 'add new artist', new_artist_path, :class => 'btn btn-info btn-sm' %> 
