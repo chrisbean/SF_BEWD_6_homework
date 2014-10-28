@@ -11,12 +11,7 @@
 #
 
 class Song < ActiveRecord::Base
-# <<<<<<< HEAD
 	belongs_to :artist
 	validates :tune, presence: true,
                    length: { minimum: 1 }
-# =======
-	validates :tune, presence: true,
-                    length: { minimum: 1 }
-# >>>>>>> 9664255d6cab49526e99670a9adc29ee28360614
 end
