@@ -8,6 +8,7 @@
 #  company    :string(255)
 #  created_at :datetime
 #  updated_at :datetime
+#  artist_id  :integer
 #
 
 require 'test_helper'
