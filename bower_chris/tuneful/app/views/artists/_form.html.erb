@@ -1,20 +1,6 @@
-<%= form_for :artist, url: artists_path do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
- 
-  <p>
-    <%= f.label :sang %><br>
-    <%= f.text_field :sang %>
-  </p>
-
-  <p>
-    <%= f.label :info %><br>
-    <%= f.text_field :info %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
+<%= simple_form_for(@artist, html: {:class => 'form-horizontal'} ) do |f| %>
+<%= f.input :name, label: false, input_html: {:class => 'form-control', placeholder: "singer"} %> 
+  <%= f.input :sang, label: false, input_html: {:class => 'form-control', placeholder: "song name"} %>  
+  <%= f.input :info, label: false, input_html: {:class => 'form-control', placeholder: "info"} %>
+  <%= f.submit "submit".html_safe, :class => 'btn btn-edit' %> 
 <% end %>

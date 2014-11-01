@@ -26,8 +26,8 @@ class ArtistsController < ApplicationController
   end
 
   def update
-  	@artist = Artist.find(params[:id])
-  	if artist.update(artist_params)
+    @artist = find_artist
+    if @artist.update(artist_params)
   		redirect_to artists_path
   	else
   		render 'edit'
@@ -42,6 +42,9 @@ class ArtistsController < ApplicationController
 
   private
   #attributes that you want people to update must be permitted
+  def find_artist
+    Artist.find(params[:id])
+  end
   def artist_params
     params.require(:artist).permit(:name, :sang, :info)
   end

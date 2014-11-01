@@ -25,12 +25,12 @@ def index
   end
 
   def edit
-  	@song = Song.find(params[:id])
+  	@song = find_song
   end
 
   def update
-  	@song = Song.find(params[:id])
-  	if song.update(song_params)
+  	@song = find_song
+  	if @song.update(song_params)
   		redirect_to songs_path
   	else
   		render 'edit'
@@ -45,6 +45,10 @@ def index
 
   private
   #attributes that you want people to update must be permitted
+  def find_song
+    Song.find(params[:id])
+  end
+  
   def song_params
     params.require(:song).permit(:singer, :company, :tune)
   end
