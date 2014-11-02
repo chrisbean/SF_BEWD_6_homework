@@ -4,15 +4,16 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = Artist.find(params[:id])
+    @artist = find_artist
+    @songs = @artist.songs
   end
 
   def new
   	@artist = Artist.new
   end
 
-    def create
-  	@artist = Artist.new(artist_params)
+  def create
+    @artist = Artist.new(artist_params)
 
   	if @artist.save
   		redirect_to @artist

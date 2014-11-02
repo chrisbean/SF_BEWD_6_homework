@@ -4,12 +4,12 @@
   <h1>a musician</h1>
   <p>
   <strong>Song Name:</strong>
-  <%= @song.tune %>
+  <%= @song.try(:tune) %>
 	</p>
 	 
 	<p>
 	  <strong>Song by:</strong>
-	  <%= @song.artist_id %>
+	  <%= @song.artist.try(:name) %>
 	</p>
 
 	<%= link_to 'back to list', songs_path, :class => 'btn btn-info btn-sm' %>

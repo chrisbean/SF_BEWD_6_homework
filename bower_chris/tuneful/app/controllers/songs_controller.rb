@@ -50,6 +50,6 @@ def index
   end
   
   def song_params
-    params.require(:song).permit(:singer, :company, :tune)
+    params.require(:song).permit(:company, :tune, :artist_id)
   end
 end

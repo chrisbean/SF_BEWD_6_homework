@@ -3,18 +3,16 @@
   <div class="row">
   <h1>a musician</h1>
 
-	<p>
-	  <strong>Artist Name:</strong>
-	  <%= @artist.name %>
-	</p>
-	 
-	<p>
-	  <strong>Song:</strong>
-	  <%= @artist.sang %>
-	</p>
+  <h3><%= @artist.name %></h3>
+  <ul>
+	<% @songs.each do |song| %>
+		<li><%= link_to "#{song.tune}", song_path(song) %></li>
+	<% end %>
+	</ul>
+  </div>
 
-	<%= link_to 'back to list', artists_path, :class => 'btn btn-info btn-sm' %>
+	<%= link_to 'view all singers', artists_path, :class => 'btn btn-info btn-sm' %>
 	<%= link_to 'edit this artist', edit_artist_path, :class => 'btn btn-edit btn-sm' %>
 	</div>
-	</div>
-	</div>
+</div>
+</div>

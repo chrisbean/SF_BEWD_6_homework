@@ -16,7 +16,7 @@
       <tr>
       	<td><%= song.id %></td>
         <td><%= song.tune %></td>
-        <td><%= song.artist_id %></td>
+        <td><%= song.artist.try(:name) %></td>
         <td><%= song.company %></td>
         <td><%= link_to 'show', song_path(song), :class => 'btn btn-show btn-sm' %> 
             <%= link_to 'edit', edit_song_path(song), :class => 'btn btn-edit btn-sm' %> 
