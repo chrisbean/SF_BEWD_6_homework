@@ -12,6 +12,7 @@
 
 class Artist < ActiveRecord::Base
 	has_many :songs
+	belongs_to :label
 	validates :name, presence: true,
-                   length: { minimum: 1 }
+										length: { minimum: 1 }
 end

@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'label/index'
+
+  get 'label/show'
+
+  get 'label/new'
+
+  get 'label/create'
+
+  get 'label/edit'
+
+  get 'label/update'
+
+  get 'label/destroy'
+
   resources :artists
   resources :songs #creates all paths
   root 'home#index'

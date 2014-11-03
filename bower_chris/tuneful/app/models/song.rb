@@ -13,5 +13,5 @@
 class Song < ActiveRecord::Base
 	belongs_to :artist
 	validates :tune, presence: true,
-                   length: { minimum: 1 }
+										length: { minimum: 1 }
 end
