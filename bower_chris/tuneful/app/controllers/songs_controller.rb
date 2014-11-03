@@ -5,7 +5,7 @@ def index
 
   def show
   	@song = Song.find(params[:id])
-      end
+  end
 
   def new
   	@song = Song.new

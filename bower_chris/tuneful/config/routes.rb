@@ -1,21 +1,9 @@
 Rails.application.routes.draw do
-
-  get 'label/index'
-
-  get 'label/show'
-
-  get 'label/new'
-
-  get 'label/create'
-
-  get 'label/edit'
-
-  get 'label/update'
-
-  get 'label/destroy'
-
+  
   resources :artists
   resources :songs #creates all paths
+  resources :labels
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
