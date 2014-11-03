@@ -1,0 +1,4 @@
+<%= simple_form_for(@label, html: {:class => 'form-horizontal'} ) do |f| %>
+<%= f.input :name, label: false, input_html: {:class => 'form-control', placeholder: "record label"} %>	
+<%= f.submit "submit".html_safe, :class => 'btn btn-edit' %>
+<% end %>

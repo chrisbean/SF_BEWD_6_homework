@@ -1,2 +1,17 @@
-<h1>Label#show</h1>
-<p>Find me in app/views/label/show.html.erb</p>
+<div class="col-xs-12">
+<div class="col-xs-10 col-xs-offset-1">
+  <div class="row">
+  <h1>record label</h1>
+
+  <h3><%= @label.name %></h3>
+  <ul>
+	<% @artists.each do |artist| %>
+		<li><%= link_to "#{artist.name}", artists_path(artist) %></li>
+	<% end %>
+	</ul>
+  </div>
+
+	<%= link_to 'view all labels', labels_path, :class => 'btn btn-info btn-sm' %>
+	</div>
+</div>
+</div>
