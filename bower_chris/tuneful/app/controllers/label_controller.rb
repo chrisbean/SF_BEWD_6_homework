@@ -26,13 +26,22 @@ class LabelController < ApplicationController
   end
 
   def update
+    @label = find_label
+    if @label.update(label_params)
+      redirect_to labels_path
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    @label = find_label
+    @label.destroy
+    redirect_to labels_path
   end
 
 private
-  #attributes that you want people to update must be permitted
+  #permit attributes people can add/edit
   def find_label
     Label.find(params[:id])
   end

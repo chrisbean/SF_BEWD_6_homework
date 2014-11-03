@@ -8,6 +8,7 @@
 #  created_at :datetime
 #  updated_at :datetime
 #  artist_id  :integer
+#  label_id   :integer
 #
 
 require 'test_helper'
