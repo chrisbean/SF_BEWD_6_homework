@@ -3,7 +3,7 @@
   <div class="row">
   <h1>record label</h1>
 
-  <h3><%= @label.name %></h3>
+  <h3><%= @label.try.class %></h3>
   <ul>
 	<% @artists.each do |artist| %>
 		<li><%= link_to "#{artist.name}", artists_path(artist) %></li>
