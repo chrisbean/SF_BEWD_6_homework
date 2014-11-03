@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141103191049) do
+ActiveRecord::Schema.define(version: 20141103234926) do
 
   create_table "artists", force: true do |t|
     t.string   "name"
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(version: 20141103191049) do
     t.string   "info"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "label_id"
   end
+
+  add_index "artists", ["label_id"], name: "index_artists_on_label_id"
 
   create_table "labels", force: true do |t|
     t.string   "name"
