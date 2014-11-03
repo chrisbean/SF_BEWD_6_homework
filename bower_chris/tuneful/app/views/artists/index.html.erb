@@ -6,14 +6,12 @@
   <div class="table-responsive">
   <table class="table table-condensed">
   <tr>
-    <th>id</th>
     <th>Artist</th>
     <th>Record Label</th>
   </tr>
  
   <% @artists.each do |artist| %>
     <tr>
-    	<td><%= artist.id %></td>
       <td><%= artist.name %></td>
       <td><%= artist.info %></td>
       <td><%= link_to 'show', artist_path(artist), :class => 'btn btn-show btn-sm' %> 
