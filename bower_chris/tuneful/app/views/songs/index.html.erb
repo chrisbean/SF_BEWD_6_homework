@@ -8,14 +8,12 @@
     <tr>
       <th>Song</th>
       <th>Artist</th>
-      <th>Label</th>
     </tr>
    
     <% @songs.each do |song| %>
       <tr>
         <td><%= song.tune %></td>
         <td><%= song.artist.try(:name) %></td>
-        <td><%= song.company %></td>
         <td><%= link_to 'show', song_path(song), :class => 'btn btn-show btn-sm' %> 
             <%= link_to 'edit', edit_song_path(song), :class => 'btn btn-edit btn-sm' %> 
             <%= link_to 'destroy', song_path(song), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-destroy btn-sm' %> 
@@ -25,7 +23,8 @@
   </table>
   </div>
   </div>
-  <%= link_to 'add new song', new_song_path, :class => 'btn btn-info btn-sm' %> <%= link_to 'add new singer', new_artist_path, :class => 'btn btn-info btn-sm' %> <%= link_to 'view by singers', artists_path, :class => 'btn btn-info btn-sm' %> 
+  <%= link_to 'add new song', new_song_path, :class => 'btn btn-info btn-sm' %> <%= link_to 'add new singer', new_artist_path, :class => 'btn btn-info btn-sm' %> <%= link_to 'add new record label', new_label_path, :class => 'btn btn-info btn-sm' %>
+  <%= link_to 'view singers', artists_path, :class => 'btn btn-primary btn-sm' %> <%= link_to 'view record labels', labels_path, :class => 'btn btn-primary btn-sm' %> 
 </div>
 </div>
 
