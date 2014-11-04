@@ -4,6 +4,7 @@
   <h1>a musician</h1>
 
   <h3><%= @artist.name %></h3>
+  <h4><%= @label.try(:name) %></h4>
   <ul>
 	<% @songs.each do |song| %>
 		<li><%= link_to "#{song.tune}", song_path(song) %></li>

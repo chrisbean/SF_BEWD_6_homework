@@ -4,7 +4,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = find_artistsongs
+    @artist = find_artist
     @songs = @artist.songs
   end
 

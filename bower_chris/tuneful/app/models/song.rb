@@ -13,6 +13,7 @@
 
 class Song < ActiveRecord::Base
 	belongs_to :artist
+	belongs_to :label
 	validates :tune, presence: true,
 										length: { minimum: 1 }
 end
