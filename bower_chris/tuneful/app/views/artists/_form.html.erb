@@ -1,6 +1,6 @@
 <%= simple_form_for(@artist, html: {:class => 'form-horizontal'} ) do |f| %>
 <%= f.input :name, label: false, input_html: {:class => 'form-control', placeholder: "singer"} %> 
   <%= f.input :sang, label: false, input_html: {:class => 'form-control', placeholder: "song name"} %>  
-  <%= f.input :info, label: false, input_html: {:class => 'form-control', placeholder: "info"} %>
+  <%= f.association :label, label: false, input_html: {:class => 'form-control', placeholder: "info"} %>
   <%= f.submit "submit".html_safe, :class => 'btn btn-edit' %> 
 <% end %>

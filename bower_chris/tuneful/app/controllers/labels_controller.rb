@@ -5,7 +5,7 @@ class LabelsController < ApplicationController
 
   def show
     @label = find_label
-    @artist = @label.artists
+    @artist = find_label.artists
   end
 
   def new
