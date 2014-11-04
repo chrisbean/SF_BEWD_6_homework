@@ -1,14 +1,10 @@
 <div class="col-xs-12">
 <div class="col-xs-10 col-xs-offset-1">
   <div class="row">
-  <h1>record label</h1>
+  <h1>artists on label</h1>
 
-  <h3><%= @label.try.class %></h3>
-  <ul>
-	<% @artists.each do |artist| %>
-		<li><%= link_to "#{artist.name}", artists_path(artist) %></li>
-	<% end %>
-	</ul>
+  <h3><%= @label.try(:name) %></h3>
+
   </div>
 
 	<%= link_to 'view all labels', labels_path, :class => 'btn btn-info btn-sm' %>
