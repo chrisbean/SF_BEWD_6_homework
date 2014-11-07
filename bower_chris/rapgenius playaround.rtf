@@ -1,0 +1,978 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13500\viewh10800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs30 \cf0 Last login: Thu Nov  6 14:44:02 on ttys000\
+Christines-MacBook-Air:~ christine$ gem install 'rapgenius'\
+Successfully installed rapgenius-1.0.3\
+Parsing documentation for rapgenius-1.0.3\
+Done installing documentation for rapgenius after 0 seconds\
+1 gem installed\
+Christines-MacBook-Air:~ christine$ pry\
+[1] pry(main)> require 'rapgenius'\
+=> true\
+[2] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")\
+=> [#<RapGenius::Song:0x007fa0835b9598\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b9750\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=181173,\
+  @title="Dance Apocalyptic",\
+  @url="https://api.rapgenius.com/songs/181173">,\
+ #<RapGenius::Song:0x007fa0835b91d8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b9340\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=216064,\
+  @title="The Chrome Shoppe - Interlude",\
+  @url="https://api.rapgenius.com/songs/216064">,\
+ #<RapGenius::Song:0x007fa0835b8e18\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b8f80\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=215848,\
+  @title="Suite V Electric Overture",\
+  @url="https://api.rapgenius.com/songs/215848">,\
+ #<RapGenius::Song:0x007fa0835b8a58\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b8bc0\
+    @id=10939,\
+    @name="Slash",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/10939">,\
+  @id=420903,\
+  @title="Apocalyptic Love",\
+  @url="https://api.rapgenius.com/songs/420903">,\
+ #<RapGenius::Song:0x007fa0835b8698\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b8800\
+    @id=2427,\
+    @name="Rhyme Asylum",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/2427">,\
+  @id=100623,\
+  @title="Unreasonable",\
+  @url="https://api.rapgenius.com/songs/100623">,\
+ #<RapGenius::Song:0x007fa0835b82d8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b8440\
+    @id=1070,\
+    @name="El-P",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/1070">,\
+  @id=18795,\
+  @title="Fantastic Damage",\
+  @url="https://api.rapgenius.com/songs/18795">,\
+ #<RapGenius::Song:0x007fa0835c3ed0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835b8080\
+    @id=11932,\
+    @name="Sadistik",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/11932">,\
+  @id=51591,\
+  @title="Momento Mori",\
+  @url="https://api.rapgenius.com/songs/51591">,\
+ #<RapGenius::Song:0x007fa0835c3b10\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c3c78\
+    @id=18282,\
+    @name="Breezy",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/18282">,\
+  @id=71097,\
+  @title="Legendary Freestyle",\
+  @url="https://api.rapgenius.com/songs/71097">,\
+ #<RapGenius::Song:0x007fa0835c3750\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c38b8\
+    @id=953,\
+    @name="Gil Scott-Heron",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/953">,\
+  @id=88645,\
+  @title="\\"B\\" Movie",\
+  @url="https://api.rapgenius.com/songs/88645">,\
+ #<RapGenius::Song:0x007fa0835c3390\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c34f8\
+    @id=169725,\
+    @name="Darmstadtium2013 Parodies",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/169725">,\
+  @id=477089,\
+  @title="Weirdest Parody Ever",\
+  @url="https://api.rapgenius.com/songs/477089">,\
+ #<RapGenius::Song:0x007fa0835c2fd0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c3138\
+    @id=3228,\
+    @name="Atoms Family",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/3228">,\
+  @id=8648,\
+  @title="Rhyming For Dummies",\
+  @url="https://api.rapgenius.com/songs/8648">,\
+ #<RapGenius::Song:0x007fa0835c2c10\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c2d78\
+    @id=2516,\
+    @name="Vast Aire",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/2516">,\
+  @id=47313,\
+  @title="Mecca and the Ox",\
+  @url="https://api.rapgenius.com/songs/47313">,\
+ #<RapGenius::Song:0x007fa0835c2850\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c29b8\
+    @id=131824,\
+    @name="Neil Elliott",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/131824">,\
+  @id=341732,\
+  @title="The Arrogance of Nations",\
+  @url="https://api.rapgenius.com/songs/341732">,\
+ #<RapGenius::Song:0x007fa0835c2490\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c25f8\
+    @id=127850,\
+    @name="John Kennedy Toole",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/127850">,\
+  @id=334701,\
+  @title="A Confederacy of Dunces (Chapter 12)",\
+  @url="https://api.rapgenius.com/songs/334701">,\
+ #<RapGenius::Song:0x007fa0835c20d0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c2238\
+    @id=67689,\
+    @name="Clive",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/67689">,\
+  @id=209680,\
+  @title="Quicksilver In The Hand",\
+  @url="https://api.rapgenius.com/songs/209680">,\
+ #<RapGenius::Song:0x007fa0835c1d10\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c1e78\
+    @id=26972,\
+    @name="Randam Luck",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/26972">,\
+  @id=94536,\
+  @title="Raw",\
+  @url="https://api.rapgenius.com/songs/94536">,\
+ #<RapGenius::Song:0x007fa0835c1950\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c1ab8\
+    @id=9068,\
+    @name="Noah23",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/9068">,\
+  @id=240081,\
+  @title="Lizard Lion Eagle",\
+  @url="https://api.rapgenius.com/songs/240081">,\
+ #<RapGenius::Song:0x007fa0835c1590\
+ #<RapGenius::Song:0x007fa0835c1590\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c16f8\
+    @id=67532,\
+    @name="LafLegend",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/67532">,\
+  @id=209297,\
+  @title="JudgementDay",\
+  @url="https://api.rapgenius.com/songs/209297">,\
+ #<RapGenius::Song:0x007fa0835c11d0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c1338\
+    @id=2890,\
+    @name="P.R. Terrorist",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/2890">,\
+  @id=38040,\
+  @title="Roll With the Rush",\
+  @url="https://api.rapgenius.com/songs/38040">,\
+ #<RapGenius::Song:0x007fa0835c0e10\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0835c0f78\
+    @id=54347,\
+    @name="Bill Hicks",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/54347">,\
+  @id=563686,\
+  @title="Revelations",\
+  @url="https://api.rapgenius.com/songs/563686">]\
+[3] pry(main)> RapGenius.search_by_title("Dance Apocalyptic").class\
+=> Array\
+[4] pry(main)> RapGenius.search_by_title("Dance Apocalyptic").length\
+=> 20\
+[5] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[1]\
+=> #<RapGenius::Song:0x007fa08245b0d0\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08245b468\
+   @id=783,\
+   @name="Janelle Monae",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/783">,\
+ @id=216064,\
+ @title="The Chrome Shoppe - Interlude",\
+ @url="https://api.rapgenius.com/songs/216064">\
+[6] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[1].class\
+=> RapGenius::Song\
+[7] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[1].keys\
+NoMethodError: undefined method `keys' for #<RapGenius::Song:0x007fa0820479d0>\
+from (pry):7:in `__pry__'\
+[8] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[1].length\
+NoMethodError: undefined method `length' for #<RapGenius::Song:0x007fa0832e02e0>\
+from (pry):8:in `__pry__'\
+[9] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[1].title\
+=> "The Chrome Shoppe - Interlude"\
+[10] pry(main)> RapGenius.search_by_singer("Janelle Monae")\
+NoMethodError: undefined method `search_by_singer' for RapGenius:Module\
+from (pry):10:in `__pry__'\
+[11] pry(main)> RapGenius.search_by_singer("Janelle")\
+NoMethodError: undefined method `search_by_singer' for RapGenius:Module\
+from (pry):11:in `__pry__'\
+[12] pry(main)> RapGenius.search_by_artist("Janelle Monae")\
+=> [#<RapGenius::Song:0x007fa08349b5a8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349b710\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=143598,\
+  @title="Q.U.E.E.N.",\
+  @url="https://api.rapgenius.com/songs/143598">,\
+ #<RapGenius::Song:0x007fa08349b1e8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349b350\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=206963,\
+  @title="Primetime",\
+  @url="https://api.rapgenius.com/songs/206963">,\
+ #<RapGenius::Song:0x007fa08349ae28\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349af90\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=106621,\
+  @title="Electric Lady",\
+  @url="https://api.rapgenius.com/songs/106621">,\
+ #<RapGenius::Song:0x007fa08349aa68\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349abd0\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=6088,\
+  @title="Tightrope",\
+  @url="https://api.rapgenius.com/songs/6088">,\
+ #<RapGenius::Song:0x007fa08349a6a8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349a810\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=213453,\
+  @title="Givin' Em What They Love",\
+  @url="https://api.rapgenius.com/songs/213453">,\
+ #<RapGenius::Song:0x007fa08349a2e8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349a450\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=3744,\
+  @title="Cold War",\
+  @url="https://api.rapgenius.com/songs/3744">,\
+ #<RapGenius::Song:0x007fa083499f28\
+  @artist=\
+   #<RapGenius::Artist:0x007fa08349a090\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=181173,\
+  @title="Dance Apocalyptic",\
+  @url="https://api.rapgenius.com/songs/181173">,\
+ #<RapGenius::Song:0x007fa083499b68\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083499cd0\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=374486,\
+  @title="What is Love",\
+  @url="https://api.rapgenius.com/songs/374486">,\
+ #<RapGenius::Song:0x007fa0834997a8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083499910\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=213445,\
+  @title="Sally Ride",\
+  @url="https://api.rapgenius.com/songs/213445">,\
+ #<RapGenius::Song:0x007fa0834993e8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083499550\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=53792,\
+  @title="Oh, Maker",\
+  @url="https://api.rapgenius.com/songs/53792">,\
+ #<RapGenius::Song:0x007fa083499028\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083499190\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=53793,\
+  @title="Many Moons",\
+  @url="https://api.rapgenius.com/songs/53793">,\
+ #<RapGenius::Song:0x007fa083498c68\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083498dd0\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=213739,\
+  @title="Can't Live Without Your Love",\
+  @url="https://api.rapgenius.com/songs/213739">,\
+ #<RapGenius::Song:0x007fa0834988a8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083498a10\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=53788,\
+  @title="Dance or Die",\
+  @url="https://api.rapgenius.com/songs/53788">,\
+ #<RapGenius::Song:0x007fa0834984e8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083498650\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=215844,\
+  @title="We Were Rock & Roll",\
+  @url="https://api.rapgenius.com/songs/215844">,\
+ #<RapGenius::Song:0x007fa083498128\
+  @artist=\
+   #<RapGenius::Artist:0x007fa083498290\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=215847,\
+  @title="Look Into My Eyes",\
+  @url="https://api.rapgenius.com/songs/215847">,\
+ #<RapGenius::Song:0x007fa0834a3d20\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0834a3e88\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=215854,\
+  @title="Ghetto Woman",\
+  @url="https://api.rapgenius.com/songs/215854">,\
+[13] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")\
+=> [#<RapGenius::Song:0x007fa0838cea80\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0838cec10\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=181173,\
+  @title="Dance Apocalyptic",\
+  @url="https://api.rapgenius.com/songs/181173">,\
+ #<RapGenius::Song:0x007fa0838ce5f8\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0838ce7d8\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=216064,\
+  @title="The Chrome Shoppe - Interlude",\
+  @url="https://api.rapgenius.com/songs/216064">,\
+ #<RapGenius::Song:0x007fa0838ce148\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0838ce300\
+    @id=783,\
+    @name="Janelle Monae",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/783">,\
+  @id=215848,\
+  @title="Suite V Electric Overture",\
+[14] pry(main)> RapGenius.search_by_title("Dance Apocalyptic").class\
+=> Array\
+[15] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[2]\
+=> #<RapGenius::Song:0x007fa0834099c8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa083409b80\
+   @id=783,\
+   @name="Janelle Monae",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/783">,\
+ @id=215848,\
+ @title="Suite V Electric Overture",\
+ @url="https://api.rapgenius.com/songs/215848">\
+[16] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[3]\
+=> #<RapGenius::Song:0x007fa0835b2f90\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0835b30f8\
+   @id=10939,\
+   @name="Slash",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/10939">,\
+ @id=420903,\
+ @title="Apocalyptic Love",\
+ @url="https://api.rapgenius.com/songs/420903">\
+[17] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[4]\
+=> #<RapGenius::Song:0x007fa0833b9c48\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0833b9db0\
+   @id=2427,\
+   @name="Rhyme Asylum",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/2427">,\
+ @id=100623,\
+ @title="Unreasonable",\
+ @url="https://api.rapgenius.com/songs/100623">\
+[18] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[5]\
+=> #<RapGenius::Song:0x007fa08332b150\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08332b2b8\
+   @id=1070,\
+   @name="El-P",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/1070">,\
+ @id=18795,\
+ @title="Fantastic Damage",\
+ @url="https://api.rapgenius.com/songs/18795">\
+[19] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[6]\
+=> #<RapGenius::Song:0x007fa083279ec8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08327a0d0\
+   @id=11932,\
+   @name="Sadistik",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/11932">,\
+ @id=51591,\
+ @title="Momento Mori",\
+ @url="https://api.rapgenius.com/songs/51591">\
+[20] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[7]\
+=> #<RapGenius::Song:0x007fa08391ddd8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08391dfb8\
+   @id=18282,\
+   @name="Breezy",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/18282">,\
+ @id=71097,\
+ @title="Legendary Freestyle",\
+ @url="https://api.rapgenius.com/songs/71097">\
+[21] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[8]\
+=> #<RapGenius::Song:0x007fa0838a3c68\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0838a3e20\
+   @id=953,\
+   @name="Gil Scott-Heron",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/953">,\
+ @id=88645,\
+ @title="\\"B\\" Movie",\
+ @url="https://api.rapgenius.com/songs/88645">\
+[22] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[9]\
+=> #<RapGenius::Song:0x007fa082615fd8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0826161b8\
+   @id=169725,\
+   @name="Darmstadtium2013 Parodies",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/169725">,\
+ @id=477089,\
+ @title="Weirdest Parody Ever",\
+ @url="https://api.rapgenius.com/songs/477089">\
+[23] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[10]\
+=> #<RapGenius::Song:0x007fa0830d1aa8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0830d1c88\
+   @id=3228,\
+   @name="Atoms Family",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/3228">,\
+ @id=8648,\
+ @title="Rhyming For Dummies",\
+ @url="https://api.rapgenius.com/songs/8648">\
+[24] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[11]\
+=> #<RapGenius::Song:0x007fa08251da90\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08251de28\
+   @id=2516,\
+   @name="Vast Aire",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/2516">,\
+ @id=47313,\
+ @title="Mecca and the Ox",\
+ @url="https://api.rapgenius.com/songs/47313">\
+[25] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[12]\
+=> #<RapGenius::Song:0x007fa08235fe10\
+ @artist=\
+  #<RapGenius::Artist:0x007fa082364348\
+   @id=131824,\
+   @name="Neil Elliott",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/131824">,\
+ @id=341732,\
+ @title="The Arrogance of Nations",\
+ @url="https://api.rapgenius.com/songs/341732">\
+[26] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[13]\
+=> #<RapGenius::Song:0x007fa0820d57d0\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0820dc850\
+   @id=127850,\
+   @name="John Kennedy Toole",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/127850">,\
+ @id=334701,\
+ @title="A Confederacy of Dunces (Chapter 12)",\
+ @url="https://api.rapgenius.com/songs/334701">\
+[27] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[14]\
+=> #<RapGenius::Song:0x007fa083449fc8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08344a130\
+   @id=67689,\
+   @name="Clive",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/67689">,\
+ @id=209680,\
+ @title="Quicksilver In The Hand",\
+ @url="https://api.rapgenius.com/songs/209680">\
+[28] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[15]\
+=> #<RapGenius::Song:0x007fa083619d58\
+ @artist=\
+  #<RapGenius::Artist:0x007fa083619ec0\
+   @id=26972,\
+   @name="Randam Luck",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/26972">,\
+ @id=94536,\
+ @title="Raw",\
+ @url="https://api.rapgenius.com/songs/94536">\
+[29] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[16]\
+=> #<RapGenius::Song:0x007fa0834408b0\
+ @artist=\
+  #<RapGenius::Artist:0x007fa083440a18\
+   @id=9068,\
+   @name="Noah23",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/9068">,\
+ @id=240081,\
+ @title="Lizard Lion Eagle",\
+ @url="https://api.rapgenius.com/songs/240081">\
+[30] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[17]\
+=> #<RapGenius::Song:0x007fa0836434c8\
+ @artist=\
+  #<RapGenius::Artist:0x007fa083643630\
+   @id=67532,\
+   @name="LafLegend",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/67532">,\
+ @id=209297,\
+ @title="JudgementDay",\
+ @url="https://api.rapgenius.com/songs/209297">\
+[31] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[18]\
+=> #<RapGenius::Song:0x007fa083430c58\
+ @artist=\
+  #<RapGenius::Artist:0x007fa083430dc0\
+   @id=2890,\
+   @name="P.R. Terrorist",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/2890">,\
+ @id=38040,\
+ @title="Roll With the Rush",\
+ @url="https://api.rapgenius.com/songs/38040">\
+[32] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[19]\
+=> #<RapGenius::Song:0x007fa0835d2f98\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0835d3100\
+   @id=54347,\
+   @name="Bill Hicks",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/54347">,\
+ @id=563686,\
+ @title="Revelations",\
+ @url="https://api.rapgenius.com/songs/563686">\
+[33] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[20]\
+=> nil\
+[34] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0]\
+=> #<RapGenius::Song:0x007fa08338b528\
+ @artist=\
+  #<RapGenius::Artist:0x007fa08338b690\
+   @id=783,\
+   @name="Janelle Monae",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/783">,\
+ @id=181173,\
+ @title="Dance Apocalyptic",\
+ @url="https://api.rapgenius.com/songs/181173">\
+[35] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].class\
+=> RapGenius::Song\
+[36] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].media.type\
+NoMethodError: undefined method `type' for #<Array:0x007fa08399c138>\
+from (pry):36:in `__pry__'\
+[37] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].media.url\
+NoMethodError: undefined method `url' for #<Array:0x007fa083907178>\
+from (pry):37:in `__pry__'\
+[38] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].keys\
+NoMethodError: undefined method `keys' for #<RapGenius::Song:0x007fa0838e5488>\
+from (pry):38:in `__pry__'\
+[39] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].song.pyongs\
+NoMethodError: undefined method `song' for #<RapGenius::Song:0x007fa082697560>\
+from (pry):39:in `__pry__'\
+[40] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].pyongs=> 6\
+[41] pry(main)> RapGenius.search_by_title("Dance Apocalyptic")[0].description\
+=> "\'93Dance Apocalyptic\'94 is the second single off of Janelle Monae\'92s second album, The Electric Lady.It\'92s a 70\'92s throwback dance tune on celebrating even when the world\'92s falling apart. Because why not?"\
+[42] pry(main)> RapGenius.search_by_title("here comes your man")[0].description\
+=> "One of the purest pop songs in the Pixies' oeuvre, Here Comes Your Man was one of the anchors of the band\'92s 1989 masterpiece Doolittle. In contrast with the fractured compositional style the band became known for, Here Comes Your Man follows a straightforward verse/pre-chorus/chorus structure, with a short instrumental break in the middle \'97 the very definition of a perfect three-and-a-half-minute pop single."\
+[43] pry(main)> RapGenius.search_by_title("my baby just cares for me")[0].description\
+=> "https://m.youtube.com/watch?v=e5YunZBydycThe song is off the album Cloud 7 and comes at number two in the tracklist.With free style playing and Chuck Wayne featuring with a guitar for background, it\'92s a freestyle jazz while also pure jazz."\
+[44] pry(main)> RapGenius.search_by_title("pirate jenny")[0].description=> "The critically-acclaimed title track from Das Racist\'92s second mixtape of 2010, \'93Sit Down, Man\'94 features a guest verse from underground rapper El-P. The song is also produced by hip-hop heavyweight Scoop Deville."\
+[45] pry(main)> RapGenius.search_by_artist("Nina Simone")\
+=> [#<RapGenius::Song:0x007fa0832aa730\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832aa898\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=170602,\
+  @title="Strange Fruit",\
+  @url="https://api.rapgenius.com/songs/170602">,\
+ #<RapGenius::Song:0x007fa0832aa370\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832aa4d8\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=269473,\
+  @title="Sinnerman",\
+  @url="https://api.rapgenius.com/songs/269473">,\
+ #<RapGenius::Song:0x007fa0832a9fb0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832aa118\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=350534,\
+  @title="Feeling Good",\
+  @url="https://api.rapgenius.com/songs/350534">,\
+ #<RapGenius::Song:0x007fa0832a9bf0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832a9d58\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=86043,\
+  @title="Don't Let Me Be Misunderstood",\
+  @url="https://api.rapgenius.com/songs/86043">,\
+ #<RapGenius::Song:0x007fa0832a9830\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832a9998\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=443371,\
+  @title="The Other Woman",\
+  @url="https://api.rapgenius.com/songs/443371">,\
+ #<RapGenius::Song:0x007fa0832a9470\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832a95d8\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=77296,\
+  @title="I Wish I Knew How It Would Feel to be Free",\
+  @url="https://api.rapgenius.com/songs/77296">,\
+ #<RapGenius::Song:0x007fa0832a90b0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832a9218\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=100073,\
+  @title="Mississippi Goddam",\
+  @url="https://api.rapgenius.com/songs/100073">,\
+ #<RapGenius::Song:0x007fa0832a8cf0\
+  @artist=\
+   #<RapGenius::Artist:0x007fa0832a8e58\
+    @id=8372,\
+    @name="Nina Simone",\
+    @type=:primary,\
+    @url="https://api.rapgenius.com/artists/8372">,\
+  @id=236845,\
+  @title="Let It Be Me",\
+  @url="https://api.rapgenius.com/songs/236845">,\
+ #<RapGenius::Song:0x007fa0832a8930\
+  @artist=\
+[46] pry(main)> RapGenius.search_by_artist("Nina Simone").class\
+=> Array\
+[47] pry(main)> RapGenius.search_by_artist("Nina Simone")[0]\
+=> #<RapGenius::Song:0x007fa0838cecb0\
+ @artist=\
+  #<RapGenius::Artist:0x007fa0838ceeb8\
+   @id=8372,\
+   @name="Nina Simone",\
+   @type=:primary,\
+   @url="https://api.rapgenius.com/artists/8372">,\
+ @id=170602,\
+ @title="Strange Fruit",\
+ @url="https://api.rapgenius.com/songs/170602">\
+[48] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].type\
+NoMethodError: undefined method `type' for #<RapGenius::Song:0x007fa082640ff8>\
+from (pry):48:in `__pry__'\
+[49] pry(main)> RapGenius.search_by_artist("Nina Simone").type\
+NoMethodError: undefined method `type' for #<Array:0x007fa0831ac978>\
+from (pry):49:in `__pry__'\
+[50] pry(main)> RapGenius.search_by_artist("Nina Simone").class\
+=> Array\
+[51] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].class\
+=> RapGenius::Song\
+[52] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist\
+=> #<RapGenius::Artist:0x007fa08249db10\
+ @id=8372,\
+ @name="Nina Simone",\
+ @type=:primary,\
+ @url="https://api.rapgenius.com/artists/8372">\
+[53] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.description\
+NoMethodError: undefined method `map' for nil:NilClass\
+from /Users/christine/.rvm/gems/ruby-2.1.2/gems/rapgenius-1.0.3/lib/rapge[54] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.class\
+[54] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.class\
+=> RapGenius::Artist\
+[55] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.url\
+=> "http://genius.com/artists/Nina-simone"\
+[56] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.description\
+NoMethodError: undefined method `map' for nil:NilClass\
+from /Users/christine/.rvm/gems/ruby-2.1.2/gems/rapgenius-1.0.3/lib/rapgenius/artist.rb:36:in `description'\
+[57] pry(main)> RapGenius.search_by_artist("Nina Simone").artist.description\
+NoMethodError: undefined method `artist' for #<Array:0x007fa0832b16e8>\
+from (pry):57:in `__pry__'\
+[58] pry(main)> RapGenius.search_by_artist("Nina Simone").artist\
+NoMethodError: undefined method `artist' for #<Array:0x007fa08344b738>\
+from (pry):58:in `__pry__'\
+[59] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.url\
+=> "http://genius.com/artists/Nina-simone"\
+[60] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.song.class\
+NoMethodError: undefined method `song' for #<RapGenius::Artist:0x007fa0835103f8>\
+[61] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.class\
+[61] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.class\
+=> RapGenius::Artist\
+[62] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.class.methods\
+=> [:find,\
+ :yaml_tag,\
+ :allocate,\
+ :new,\
+ :superclass,\
+ :json_creatable?,\
+ :freeze,\
+ :===,\
+ :==,\
+ :<=>,\
+ :<,\
+ :<=,\
+ :>,\
+ :>=,\
+ :to_s,\
+ :inspect,\
+ :included_modules,\
+ :include?,\
+ :name,\
+ :ancestors,\
+ :instance_methods,\
+ :public_instance_methods,\
+ :protected_instance_methods,\
+ :private_instance_methods,\
+ :constants,\
+ :const_get,\
+ :const_set,\
+ :const_defined?,\
+ :const_missing,\
+ :class_variables,\
+ :remove_class_variable,\
+ :class_variable_get,\
+ :class_variable_set,\
+ :class_variable_defined?,\
+ :public_constant,\
+ :private_constant,\
+ :singleton_class?,\
+ :include,\
+ :prepend,\
+ :module_exec,\
+ :class_exec,\
+ :module_eval,\
+ :class_eval,\
+ :method_defined?,\
+ :public_method_defined?,\
+ :private_method_defined?,\
+ :protected_method_defined?,\
+ :public_class_method,\
+ :private_class_method,\
+ :autoload,\
+ :autoload?,\
+ :instance_method,\
+ :public_instance_method,\
+ :pretty_print_cycle,\
+ :pretty_print,\
+ :psych_yaml_as,\
+ :yaml_as,\
+ :pry,\
+ :__binding__,\
+ :psych_to_yaml,\
+ :to_yaml,\
+ :to_yaml_properties,\
+ :to_json,\
+ :pretty_print_instance_variables,\
+ :pretty_print_inspect,\
+ :nil?,\
+ :=~,\
+ :!~,\
+ :eql?,\
+ :hash,\
+ :class,\
+ :singleton_class,\
+ :clone,\
+ :dup,\
+ :taint,\
+ :tainted?,\
+ :untaint,\
+ :untrust,\
+ :untrusted?,\
+ :trust,\
+ :frozen?,\
+ :methods,\
+ :singleton_methods,\
+ :protected_methods,\
+ :private_methods,\
+ :public_methods,\
+ :instance_variables,\
+ :instance_variable_get,\
+ :instance_variable_set,\
+ :instance_variable_defined?,\
+ :remove_instance_variable,\
+ :instance_of?,\
+ :kind_of?,\
+ :is_a?,\
+ :tap,\
+ :send,\
+ :public_send,\
+ :respond_to?,\
+ :extend,\
+ :display,\
+ :method,\
+ :public_method,\
+ :singleton_method,\
+ :define_singleton_method,\
+ :object_id,\
+ :to_enum,\
+ :enum_for,\
+ :pretty_inspect,\
+ :byebug,\
+ :debugger,\
+ :equal?,\
+ :!,\
+ :!=,\
+ :instance_eval,\
+ :instance_exec,\
+ :__send__,\
+ :__id__]\
+[63] pry(main)> RapGenius.search_by_artist("Nina Simone")[0].artist.class.pry\
+[1] pry(RapGenius::Artist)> cd RapGenius.search_by_artist("Nina Simone")[0].artist.class\
+[2] pry(RapGenius::Artist):1> ls\
+Object.methods: yaml_tag\
+RapGenius::Artist.methods: find\
+RapGenius::Artist#methods:\
+  description  id  image  name  response  songs  url\
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_\
+[3] pry(RapGenius::Artist):1> cd songs\
+Error: Bad object path: "songs"\
+Failed trying to resolve: "songs"\
+Exception: #<NameError: undefined local variable or method `songs' for RapGenius::Artist:Class>\
+[4] pry(RapGenius::Artist):1> cd RapGenius.search_by_artist("Nina Simone")[0].artist.class\
+[5] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].artist.url\
+=> "http://genius.com/artists/Nina-simone"\
+[6] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].description\
+=> "This song, written by Abel Meeropol and performed by many artists (but most notably, Billie Holiday and Nina Simone,) is a dark and profound song about the lynching of African Americans in the Southern United States during the Jim Crow Era.  In the lyrics, black victims are portrayed as \'93strange fruit,\'94 as they hang from trees, rotting in the sun, blowing in the wind, and becoming food for crows upon being burned."\
+[7] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].artist.description\
+NoMethodError: undefined method `map' for nil:NilClass\
+from /Users/christine/.rvm/gems/ruby-2.1.2/gems/rapgenius-1.0.3/lib/rapgenius/artist.rb:36:in `description'\
+[8] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].artist.url\
+=> "http://genius.com/artists/Nina-simone"\
+[9] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].artist.media\
+NoMethodError: undefined method `media' for #<RapGenius::Artist:0x007fa08361b9a0>\
+from (pry):67:in `__binding__'\
+[10] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].artist.media.class\
+NoMethodError: undefined method `media' for #<RapGenius::Artist:0x007fa0826ea0d0>\
+from (pry):68:in `__binding__'\
+[11] pry(RapGenius::Artist):2> RapGenius.search_by_artist("Nina Simone")[0].artist.image\
+=> "http://s3.amazonaws.com/rapgenius/1363155558_04%20Nina%20Simone%20-%20A%20Single%20Woman%20-%20Inside%20photo%202.jpg"\
+[12] pry(RapGenius::Artist):2> RapGenius.search_by_artist("david bowie")[0].artist.image\
+=> "http://s3.amazonaws.com/rapgenius/happy-birthday-david-bowie--large-msg-135764424027.jpg"\
+[13] pry(RapGenius::Artist):2> RapGenius.search_by_artist("the pixies")[0].artist.image\
+=> nil\
+[14] pry(RapGenius::Artist):2> RapGenius.search_by_artist("pixies")[0].artist.image\
+=> "http://s3.amazonaws.com/rapgenius/21-pixies.jpg"\
+[15] pry(RapGenius::Artist):2> RapGenius.search_by_artist("nina hagen")[0].artist.image\
+=> "http://images.rapgenius.com/6ca62369c9656970b6d547aae8da0474.640x866x1.jpg"\
+\
+\
+\
+\
+\
+\
+RapGenius.search_by_artist("artist_id")[0].artist.image\
+\
+\
+\
+<%= artists each do |img| %>\
+	<img src="<%=RapGenius.search_by_artist("artist_id")[0].artist.image%>" style="width:300px;float:left;">\
+<% end %>}

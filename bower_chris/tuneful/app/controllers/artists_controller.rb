@@ -41,6 +41,10 @@ class ArtistsController < ApplicationController
   	redirect_to artists_path
   end
 
+  def img
+    @img = RapGenius.search_by_artist("find_artist")[0].artist.image
+  end
+
   private
   #attributes that you want people to update must be permitted
   def find_artist
