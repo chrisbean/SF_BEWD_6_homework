@@ -3,14 +3,43 @@
 @import url(http://fonts.googleapis.com/css?family=Norican);
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
 @import url(http://fonts.googleapis.com/css?family=Oregano);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 body {
 	background: #fff9f7;
 }
-h1 {
-	font-size: 5em;
+h1, h2 {
 	font-weight: 800;
 	color: #192d6b;
+}
+h1 {
+	font-size: 5em;
+}
+a {
+	text-decoration: none;
+	color: #192d6b;
+}
+center {
+	margin: 2.5em 0;
+	font-size: .8em;
+	font-weight: 800;
+}
+
+center a {
+	font-size: 1.8em;
+}
+
+p {
+	font-size: 130%;
+	line-height: 180%;
+	margin-bottom: 1.4em;
+}
+.gintable {
+	margin-bottom: 2.2em;
+	border: 0;
+}
+td, th {
+	padding: 0 2.2em;
 }
 .norican_font {
 	font-family: Norican;
@@ -20,4 +49,29 @@ h1 {
 }
 .satisfy_font {
 	font-family: 'Satisfy';
+}
+.scoot {
+	margin-left: .2em;
+}
+.lato_font {
+	font-family: 'Lato';
+}
+
+.form-control {
+	margin: .5em;
+}
+
+.optional {
+	font-weight: normal;
+	padding: 0 .2em;
+	margin: .2em;
+}
+
+right_col {
+	text-align:right;
+}
+
+img {
+	width: 80%;
+	margin-bottom: 1.2em;
 }

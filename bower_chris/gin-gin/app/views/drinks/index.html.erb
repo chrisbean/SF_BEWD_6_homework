@@ -1,5 +1,17 @@
-<div class="col-xs-10 col-xs-offset-1">
-<div class="row">
-	<h1 class="satisfy_font">gin-gin</h1>
+	<table class="table-responsive gintable">
+		<tr>
+			<th>drinks</th>
+			<th>bars</th>
+		</tr>
+		<% @drinks.each do |drink| %>
+		<tr>
+			<td><%= link_to drink.name, drink_path(drink) %></td>
+			<td><%= drink.bar %></td>
+		</tr>
+		<% end %>
+	</table>
+		
+
 </div>
-</div>
+<%= link_to 'add new cocktail', new_drink_path, :class => 'btn btn-info btn-sm ' %>
+

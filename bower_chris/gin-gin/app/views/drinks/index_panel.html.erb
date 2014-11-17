@@ -1,0 +1,24 @@
+		<div class="panel-heading ">
+			<div class="col-xs-5">
+				drinks
+			</div>
+			<div class="col-xs-5">
+				bars
+			</div>
+		</div>
+		<div class="panel-body">
+			<div class="col-sm-6">
+			<% @drinks.each do |drink| %>
+				<ul>
+					<li><%= link_to drink.name, drink_path(drink) %></li>
+				</ul>
+			<% end %>	
+			</div>
+			<div class="col-sm-4-offset-6">
+			<% @drinks.each do |drink| %>
+				<ul>
+					<li><%= link_to drink.bar, drink_path(drink) %></li>
+				</ul>
+			<% end %>	
+			</div>
+		</div>
