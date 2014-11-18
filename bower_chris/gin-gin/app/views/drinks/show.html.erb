@@ -3,12 +3,13 @@
   <div class="col-md-6">
     <h2 class="lato_font"><%= @drink.name %></h2>
     <p class="lato_font"><%= @drink.list %></p>
-    <%= image_tag @drink.avatar.url %>
+    <%= image_tag @drink.avatar.url, :class => "drink" %>
   </div>
 
   <div class="col-md-4">
     <h2 class="lato_font"><%= @drink.bar %></h2>
     <p class="lato_font">$<%= @drink.price %></p>
+    <%= image_tag("#{@glass_img}") %>
   </div>
   
 </div>
