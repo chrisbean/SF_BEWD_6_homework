@@ -8,7 +8,7 @@
 		<% @drinks.each do |drink| %>
 		<tr>
 			<td><%= link_to drink.name, drink_path(drink) %></td>
-			<td><%= drink.bar %></td>
+			<td><%= drink.bar.try(:name) %></td>
 		</tr>
 		<% end %>
 	</table>

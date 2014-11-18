@@ -7,7 +7,7 @@
   </div>
 
   <div class="col-md-4">
-    <h2 class="lato_font"><%= @drink.bar %></h2>
+    <h2 class="lato_font"><%= @drink.bar.try(:name) %></h2>
     <p class="lato_font">$<%= @drink.price %></p>
     <%= image_tag(glassware_img(@drink)) %>
   </div>

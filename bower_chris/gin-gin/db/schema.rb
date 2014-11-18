@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118035809) do
+ActiveRecord::Schema.define(version: 20141118225340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,7 +36,12 @@ ActiveRecord::Schema.define(version: 20141118035809) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.integer  "bar_id_id"
+    t.integer  "bar_id"
   end
+
+  add_index "drinks", ["bar_id"], name: "index_drinks_on_bar_id", using: :btree
+  add_index "drinks", ["bar_id_id"], name: "index_drinks_on_bar_id_id", using: :btree
 
   create_table "pg_search_documents", force: true do |t|
     t.text     "content"
