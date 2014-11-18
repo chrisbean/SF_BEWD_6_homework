@@ -11,6 +11,8 @@
 <body>
 	<div class="col-md-10 col-md-offset-1">
 	<div class="row">
+	<!-- open divs here to keep code DRY -->
+	<!-- and only write out header once -->
 	<h1 class="satisfy_font"><h1 class="satisfy_font scoot"><%= link_to 'gin-gin', drinks_path %></h1>
 		<% if notice %>
 			<p class="alert alert-success"><%= notice %></p>
@@ -18,8 +20,11 @@
 		<% if alert %>
 			<p class="alert alert-danger"><%= alert %></p>
 		<% end %>
+	<!-- erb page yield is inside two open bootstrap divs -->
 	<%= yield %>
+	<!-- then close bootstrap divs below -->
 	</div>
+	<!-- only code footer once -->
 	<center class="satisfy_font"><%=link_to 'about gin-gin', about_path %></center>
 	<center class="lato_font">&copy; 2014</center>
 	</div>
