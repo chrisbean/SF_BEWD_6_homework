@@ -1,6 +1,6 @@
 class DrinksController < ApplicationController
 	def index
-		@drinks = Drink.all
+		@drinks = Drink.search(params[:search])
 	end
 
 	def show

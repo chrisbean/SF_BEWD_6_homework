@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.7'
 gem 'pg'
 gem 'rails_12factor', group: :production
+
 gem 'devise'
+gem 'pg_search'
 
 gem 'compass'
 gem 'haml' # for SASS

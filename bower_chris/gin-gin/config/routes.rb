@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :drinks
+  resources :bars
 
   root 'drinks#index'
 

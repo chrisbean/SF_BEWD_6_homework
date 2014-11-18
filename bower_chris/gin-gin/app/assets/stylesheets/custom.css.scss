@@ -37,9 +37,14 @@ p {
 .gintable {
 	margin-bottom: 2.2em;
 	border: 0;
+	width: 80%;
+}
+th {
+	font-weight: 800;
 }
 td, th {
 	padding: 0 2.2em;
+	font-size: 120%;
 }
 .norican_font {
 	font-family: Norican;
@@ -74,4 +79,24 @@ right_col {
 .drink {
 	width: 250px;
 	margin-bottom: 1.2em;
+}
+
+.searcher {
+	size: 80%;
+	margin: 40px;
+}
+
+.btn-01 {
+	background: #c2e9f7;
+	color: #192d6b;
+	font-weight: 600;
+}
+.btn-02 {
+	background: #d3efec;
+	color: #192d6b;
+	font-weight: 600;
+}
+.btn-search {
+	background: #192d6b;
+	color: #fff9f7;
 }
