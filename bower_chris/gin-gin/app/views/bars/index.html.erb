@@ -1,8 +1,17 @@
 <div class="col-sm-10 scoot">
 
-	<table class="table-responsive gintable lato_font">
+	<div class="panel panel-default panel-bar">
+  <% @bars.each do |bar| %>
 
-	</table>
+	  <div class="panel-heading">
+		  <h3 class="panel-title">in the <%= bar.neighborhood %></h3>
+	  </div>
+	  <div class="panel-body">
+	    <%= bar.name %>
+	  </div>
+  <% end %>
+	</div>
+	
 </div>
 
 </div>

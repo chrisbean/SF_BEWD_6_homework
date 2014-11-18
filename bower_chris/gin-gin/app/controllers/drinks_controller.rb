@@ -47,7 +47,7 @@ class DrinksController < ApplicationController
   end
 
   def drink_params
-  	params.require(:drink).permit(:name, :list, :profile, :glass, :glass_img, :price, :bar, :avatar)
+  	params.require(:drink).permit(:name, :list, :profile, :glass, :glass_img, :price, :bar_id, :avatar)
   end
 
 end

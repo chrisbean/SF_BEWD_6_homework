@@ -8,6 +8,7 @@ class Drink < ActiveRecord::Base
 
 	# set up association between models
 	belongs_to :user
+	belongs_to :bar
 
 	# stuff that paperclip wants
 	has_attached_file :avatar, :styles => 
