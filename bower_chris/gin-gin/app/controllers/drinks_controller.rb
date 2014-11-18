@@ -40,15 +40,6 @@ class DrinksController < ApplicationController
   	redirect_to drinks_path
   end
 
-  def glassware
-    @glassware = glass_img
-    if @drink.glass == 'coupe'
-      @glass_img = "coupe.png"
-    elsif @drink.glass == 'martini'
-      @glass_img = "martini.png"
-  end
-    
-  end
 
   private
   def find_drink
