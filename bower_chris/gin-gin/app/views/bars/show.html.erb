@@ -1,0 +1,21 @@
+<div class="col-sm-10 scoot">
+
+	<div class="panel panel-default panel-bar">
+  
+	  <div class="panel-heading">
+		<h3 class="panel-title"><%= @bar.name %> <span class="pull-right"><%= @bar.neighborhood %></span></h3>
+	  </div>
+	  
+	  <div class="panel-body">
+	  <%= @drink.try(:name) %>
+	  </div>
+
+	</div>
+	
+</div>
+
+</div>
+<%= link_to 'view all bars', bars_path, :class => 'btn btn-search btn-sm lato_font' %>
+<%= link_to 'browse drinks', drinks_path, :class => 'btn btn-search btn-sm lato_font' %>
+<%= link_to 'add new cocktail', new_drink_path, :class => 'btn btn-01 btn-sm lato_font' %>
+<%= link_to 'add new bar', new_bar_path, :class => 'btn btn-02 btn-sm lato_font' %>

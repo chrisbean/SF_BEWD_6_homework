@@ -36,6 +36,10 @@ class BarsController < ApplicationController
   	redirect_to bars_path
   end
 
+	def hood
+		@bar = Bar(params[:neighborhood])
+	end
+
 	private
   def find_bar
   	Bar.find(params[:id])

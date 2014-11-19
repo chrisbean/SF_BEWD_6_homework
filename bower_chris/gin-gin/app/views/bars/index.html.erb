@@ -1,19 +1,24 @@
 <div class="col-sm-10 scoot">
 
 	<div class="panel panel-default panel-bar">
-  <% @bars.each do |bar| %>
-
+  
+	<% @bars.each do |hood| %>
 	  <div class="panel-heading">
-		  <h3 class="panel-title">in the <%= bar.neighborhood %></h3>
+		<h3 class="panel-title">in the <%= hood.neighborhood %></h3>
 	  </div>
+	  
 	  <div class="panel-body">
-	    <%= bar.name %>
+	  <% @bars.each do |bar| %>
+	    <%= link_to bar.name, bar_path(bar) %>
+	  <% end %>
 	  </div>
-  <% end %>
+  	<% end %>
+
 	</div>
 	
 </div>
 
 </div>
+<%= link_to 'browse drinks', drinks_path, :class => 'btn btn-search btn-sm lato_font' %>
 <%= link_to 'add new cocktail', new_drink_path, :class => 'btn btn-01 btn-sm lato_font' %>
 <%= link_to 'add new bar', new_bar_path, :class => 'btn btn-02 btn-sm lato_font' %>
