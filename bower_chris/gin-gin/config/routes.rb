@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root 'drinks#index'
 
   get 'about' => 'drinks#about'
+
+  get '/neighborhood/:name' => "bars#hood", as: "hood"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

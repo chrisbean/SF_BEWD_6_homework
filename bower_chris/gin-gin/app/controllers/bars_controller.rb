@@ -3,6 +3,15 @@ class BarsController < ApplicationController
 		@bars = Bar.all
 	end
 
+  def hood
+    # params[:name]
+    @bars = Bar.where(neighborhood: params[:name])
+  end
+
+  # def place
+  #   @bar = Bar(params[:neighborhood])
+  # end
+
 	def show
   	@bar = find_bar
   end
@@ -35,10 +44,6 @@ class BarsController < ApplicationController
 
   	redirect_to bars_path
   end
-
-	def hood
-		@bar = Bar(params[:neighborhood])
-	end
 
 	private
   def find_bar

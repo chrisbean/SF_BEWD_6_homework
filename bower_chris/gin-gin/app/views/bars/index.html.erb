@@ -2,17 +2,37 @@
 
 	<div class="panel panel-default panel-bar">
   
-	<% @bars.each do |hood| %>
+
 	  <div class="panel-heading">
-		<h3 class="panel-title">in the <%= hood.neighborhood %></h3>
+		<h3 class="panel-title">pick a neighborhood!</h3>
 	  </div>
 	  
 	  <div class="panel-body">
-	  <% @bars.each do |bar| %>
-	    <%= link_to bar.name, bar_path(bar) %>
-	  <% end %>
+		  <%= link_to "Bernal Heights", hood_path("bernal") %><br>
+		  <%= link_to "The Castro", hood_path("castro") %><br>
+		  <%= link_to "Chinatown", hood_path("chinatown") %><br>
+		  <%= link_to "Cole Valley", hood_path("cole_valley") %><br>
+		  <%= link_to "Fisherman's Wharf", hood_path("wharf") %><br>
+		  <%= link_to "Golden Gate Park", hood_path("ggpark") %><br>
+		  <%= link_to "The Haight", hood_path("haight") %><br>
+		  <%= link_to "Hayes Valley", hood_path("hayes") %><br>
+		  <%= link_to "The Marina", hood_path("marina") %><br>
+		  <%= link_to "Mid-Market", hood_path("market") %><br>
+		  <%= link_to "The Mission", hood_path("mission") %><br>
+		  <%= link_to "Nob Hill", hood_path("nobhill") %><br>
+		  <%= link_to "Noe Valley", hood_path("noe") %><br>
+		  <%= link_to "North Beach", hood_path("northbeach") %><br>
+		  <%= link_to "Pacific Heights", hood_path("pacheights") %><br>
+		  <%= link_to "Potrero Hill", hood_path("potrero") %><br>
+		  <%= link_to "The Richmond", hood_path("richmond") %><br>
+		  <%= link_to "Russian Hill", hood_path("russianhill") %><br>
+		  <%= link_to "SoMa", hood_path("soma") %><br>
+		  <%= link_to "The Sunset", hood_path("sunset") %><br>
+		  <%= link_to "The Tenderloin", hood_path("tl") %><br>
+		  <%= link_to "Union Square", hood_path("unionsq") %><br>
+		  <%= link_to "Western Addition", hood_path("western") %><br>
+			
 	  </div>
-  	<% end %>
 
 	</div>
 	
@@ -22,3 +42,4 @@
 <%= link_to 'browse drinks', drinks_path, :class => 'btn btn-search btn-sm lato_font' %>
 <%= link_to 'add new cocktail', new_drink_path, :class => 'btn btn-01 btn-sm lato_font' %>
 <%= link_to 'add new bar', new_bar_path, :class => 'btn btn-02 btn-sm lato_font' %>
+

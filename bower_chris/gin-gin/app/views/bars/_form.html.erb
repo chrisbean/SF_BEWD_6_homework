@@ -1,18 +1,6 @@
 <%= simple_form_for(@bar, html: {:class => 'form-horizontal'}) do |f| %>
 	<%= f.input :name, label: false, input_html: {:class => 'form-control lato_font', placeholder: "bar name"} %>
-	<%= f.input :neighborhood, label: false, input_html: {:class => 'form-control lato_font', placeholder: "neighborhood"} %>
-	<%= f.input :neighborhood, label: "hood", :collection => [['Bernal Heights','bernal'],['The Castro','castro'],['Chinatown','chinatown'],['Cole Valley','cole valley'],["Fisherman's Wharf",'wharf'],['Golden Gate Park','ggpark'],['The Haight','haight'],['Hayes Valley','hayes'],['Inner Richmond','richmond'],['Inner Sunset','sunset'],['The Mission','mission'],['The Marina','marina'],['Mid-Market','market'],['Nob Hill','nobhill'],['Noe Valley','noe'],['North Beach','northbeach']], input_html: {:class => 'scoot'} %>
+	<%= f.input :neighborhood, label: "hood", :collection => [['Bernal Heights','bernal'],['The Castro','castro'],['Chinatown','chinatown'],['Cole Valley','cole_valley'],["Fisherman's Wharf",'wharf'],['Golden Gate Park','ggpark'],['The Haight','haight'],['Hayes Valley','hayes'],['The Mission','mission'],['The Marina','marina'],['Mid-Market','market'],['Nob Hill','nobhill'],['Noe Valley','noe'],['North Beach','northbeach'],['Pacific Heights','pacheights'],['Potrero Hill','potrero'],['The Richmond','richmond'],['Russian Hill','russianhill'],['SoMa','soma'],['The Sunset','sunset'],['Tenderloin','tl'],['Union Square','unionsq'],['Western Addition','western']], input_html: {:class => 'scoot'} %>
 	<%= f.submit "submit".html_safe, :class => 'btn btn-edit lato_font' %>
 <% end %> 
 		
-		<!-- 
-		North Beach
-		Outer Richmond
-		Outer Sunset
-		Pacific Heights
-		Potrero Hill
-		Russian Hill
-		SoMa
-		Tenderloin
-		Union Square
-		Western Addition -->
