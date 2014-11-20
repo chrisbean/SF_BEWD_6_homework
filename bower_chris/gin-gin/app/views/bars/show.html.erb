@@ -7,6 +7,7 @@
 	  </div>
 	  
 	  <div class="panel-body">
+	  <!-- this is breaking my view!! -->
 		<% @drinks.each do |drink| %>
 			<%= link_to '#{drink.name}', drink_path(drink) %>
 		<% end %>
